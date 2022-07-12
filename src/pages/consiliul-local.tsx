@@ -1,10 +1,6 @@
 import * as React from 'react';
+import PageLayout from '../components/layout';
 
-const pageStyles = {
-  color: '#232129',
-  padding: '96px',
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-};
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
@@ -13,10 +9,10 @@ const headingStyles = {
 
 const HistoricBuildingsPage = () => {
   return (
-    <main style={pageStyles}>
+    <PageLayout>
       <title>Consiliul local</title>
       <h1 style={headingStyles}>Consiliul local</h1>
-    </main>
+    </PageLayout>
   );
 };
 
