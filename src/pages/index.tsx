@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 const pageStyles = {
   color: '#232129',
@@ -10,7 +11,7 @@ const pageStyles = {
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Izbutim</title>
+      <Helmet title="Izbutim" defer={false} />
       <h1>Izbutim</h1>
       <h2>Investim în Zile Bune și Ușoare pentru Timișoreni!</h2>
       <br />
