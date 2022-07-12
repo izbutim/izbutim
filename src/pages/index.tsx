@@ -18,7 +18,7 @@ const IndexPage = () => {
         <Link to="/piste-de-biciclete">Starea pistelor de biciclete</Link>
       </p>
       <p>
-        <Link to="/cladiri-istorice">Reabilitarea cladirilor istorice</Link>
+        <Link to="/cladiri-istorice">Reabilitarea clădirilor istorice</Link>
       </p>
       <p>
         <Link to="/transport-in-comun">Transport în comun</Link>
