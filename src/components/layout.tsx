@@ -10,7 +10,7 @@ const PageLayout = (props: Props) => {
   return (
     <>
       <header className={styles.header}>
-        <h1>Izbutim!</h1>
+        <h1 className={styles.title}>Izbutim!</h1>
       </header>
       <main>{props.children}</main>
       <footer className={styles.footer}>

@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --clr-tm-blue: #3665a1; /* (54, 101, 161) */
+}
+
 body {
   margin: 0;
   font-family: '-apple-system, Roboto', sans-serif, serif;
