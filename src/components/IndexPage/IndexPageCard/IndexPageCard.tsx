@@ -14,7 +14,7 @@ const IndexPageCard = ({ title, to, imageUrl, imageAlt }: Props) => {
     <div className={styles.card}>
       <Link to={to}>
         <div className={styles.cardImageContainer}>
-          <img src={imageUrl} alt={imageAlt} />
+          <img src={imageUrl} alt={imageAlt} className={styles.cardImage} />
         </div>
       </Link>
       <div className={styles.titleContainer}>{title}</div>

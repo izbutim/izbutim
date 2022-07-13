@@ -32,13 +32,13 @@ const IndexPage = () => {
           <IndexPageCard
             title="Primăria"
             to="/primaria"
-            imageUrl=""
+            imageUrl="https://www.primariatm.ro/wp-content/uploads/2020/08/pmt3-1.jpg"
             imageAlt="Primăria"
           />
           <IndexPageCard
             title="Consiliul Local"
             to="/consiliul-local"
-            imageUrl=""
+            imageUrl="https://www.primariatm.ro/wp-content/uploads/2020/08/pmt3-1.jpg"
             imageAlt="Consiliul Local"
           />
           <IndexPageCard
