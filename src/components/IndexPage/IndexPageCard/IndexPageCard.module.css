@@ -1,4 +1,48 @@
 .card {
-  width: 300px;
+  width: 33%;
+  max-width: 275px;
+
   border: 1px solid #000000;
+  border-radius: 5px;
+
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .card {
+    width: 49%;
+  }
+}
+
+.cardImageContainer {
+  width: 275px;
+  height: 275px;
+  background-color: #707070;
+}
+
+.titleContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1rem;
+
+  background-color: rgba(100, 100, 100, 0.3);
 }

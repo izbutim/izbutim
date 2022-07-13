@@ -5,12 +5,19 @@ import { Link } from 'gatsby';
 type Props = {
   title: string;
   to: string;
+  imageUrl: string;
+  imageAlt: string;
 };
 
-const IndexPageCard = ({ title, to }: Props) => {
+const IndexPageCard = ({ title, to, imageUrl, imageAlt }: Props) => {
   return (
     <div className={styles.card}>
-      <Link to={to}>{title} </Link>
+      <Link to={to}>
+        <div className={styles.cardImageContainer}>
+          <img src={imageUrl} alt={imageAlt} />
+        </div>
+      </Link>
+      <div className={styles.titleContainer}>{title}</div>
     </div>
   );
 };

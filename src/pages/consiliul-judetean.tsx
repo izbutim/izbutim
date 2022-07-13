@@ -1,17 +1,17 @@
 import * as React from 'react';
 import PageLayout from '../components/layout';
+import { Helmet } from 'react-helmet';
 
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 320,
 };
 
 const HistoricBuildingsPage = () => {
   return (
     <PageLayout>
-      <title>Consiliul județean</title>
-      <h1 style={headingStyles}>Consiliul județean</h1>
+      <Helmet title="Izbutim | Consiliul Județean" defer={false} />
+      <h1 style={headingStyles}>Consiliul Județean</h1>
     </PageLayout>
   );
 };
