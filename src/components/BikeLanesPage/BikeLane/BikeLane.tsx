@@ -13,6 +13,7 @@ type Props = {
 const BikeLane = ({ bikeLane }: Props) => {
   const pathOptions = {
     color: laneColorFromState(bikeLane.state),
+    weight: 10,
   };
 
   return (

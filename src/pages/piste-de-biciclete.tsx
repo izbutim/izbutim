@@ -16,8 +16,9 @@ type LocatorProps = {
   consumer: (latLng: LatLng) => void;
 };
 
-const logLatLngArray = (arr: LatLng[]) => {
-  alert(arr.map((l) => `[${l.lat.toFixed(4)}, ${l.lng.toFixed(4)}]`));
+const alertLatLngArray = (arr: LatLng[]) => {
+  const pathArr = arr.map((l) => `[${l.lat.toFixed(4)}, ${l.lng.toFixed(4)}]`);
+  alert(`path: [${pathArr}]`);
 };
 
 const Locator = ({ consumer }: LocatorProps) => {
@@ -37,7 +38,7 @@ const BikeLanesPage = () => {
   const handleLocatorClick = () => {
     if (usingLocator) {
       // We don't want the last element because that's the place of the locator button (overlapping).
-      logLatLngArray(path.slice(0, -1));
+      alertLatLngArray(path.slice(0, -1));
     }
 
     setUsingLocator((prevState) => !prevState);

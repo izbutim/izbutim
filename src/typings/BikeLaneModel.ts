@@ -4,7 +4,7 @@ export enum BikeLaneState {
   GOOD = 'GOOD',
   NEEDS_RENOVATION = 'NEEDS_RENOVATION',
   NEEDS_MARKINGS = 'NEEDS_MARKINGS',
-  WANTED = 'WANTED',
+  PROPOSED = 'PROPOSED',
 }
 
 export type BikeLaneModel = {
@@ -37,6 +37,6 @@ export const laneStateInRomanian = (state: BikeLaneState): string => {
     case BikeLaneState.NEEDS_MARKINGS:
       return 'Necesită marcaje';
     default:
-      return 'Necesită proiect';
+      return 'Propunere';
   }
 };
