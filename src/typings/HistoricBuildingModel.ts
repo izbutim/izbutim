@@ -1,9 +1,11 @@
 import { LatLngExpression } from 'leaflet';
 
 export enum HistoricBuildingState {
-  GOOD = 'GOOD',
-  NEEDS_RENOVATION = 'NEEDS_RENOVATION',
+  RENOVATED = 'RENOVATED',
   UNDER_RENOVATION = 'UNDER_RENOVATION',
+  NEEDS_RENOVATION = 'NEEDS_RENOVATION',
+  NOT_RENOVATED = 'NOT_RENOVATED',
+  DEGRADATION = 'DEGRADATION',
 }
 
 export type HistoricBuildingModel = {
@@ -18,11 +20,30 @@ export const buildingColorFromState = (
   state: HistoricBuildingState
 ): string => {
   switch (state) {
-    case HistoricBuildingState.GOOD:
+    case HistoricBuildingState.RENOVATED:
       return '#00FF00';
     case HistoricBuildingState.UNDER_RENOVATION:
       return '#0000FF';
+    case HistoricBuildingState.NEEDS_RENOVATION:
+      return '#FFFF00';
+    case HistoricBuildingState.NOT_RENOVATED:
+      return '#FF8000';
     default:
       return '#FF0000';
+  }
+};
+
+export const buildingStateInRomanian = (
+  state: HistoricBuildingState
+): string => {
+  switch (state) {
+    case HistoricBuildingState.RENOVATED:
+      return 'Reabilitată';
+    case HistoricBuildingState.NEEDS_RENOVATION:
+      return 'Necesită reabilitare';
+    case HistoricBuildingState.UNDER_RENOVATION:
+      return 'În curs de reabilitare';
+    default:
+      return 'Degradare';
   }
 };

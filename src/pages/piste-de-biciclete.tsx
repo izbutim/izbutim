@@ -17,7 +17,7 @@ type LocatorProps = {
 };
 
 const alertLatLngArray = (arr: LatLng[]) => {
-  const pathArr = arr.map((l) => `[${l.lat.toFixed(4)}, ${l.lng.toFixed(4)}]`);
+  const pathArr = arr.map((l) => `[${l.lat.toFixed(5)}, ${l.lng.toFixed(5)}]`);
   alert(`path: [${pathArr}]`);
 };
 

@@ -3,6 +3,7 @@ import { Polygon, Tooltip } from 'react-leaflet';
 import {
   HistoricBuildingModel,
   buildingColorFromState,
+  buildingStateInRomanian,
 } from '../../../typings/HistoricBuildingModel';
 
 type Props = {
@@ -21,7 +22,17 @@ const HistoricBuilding = ({ historicBuilding }: Props) => {
       fillColor={buildingColorFromState(historicBuilding.state)}
     >
       <Tooltip direction="bottom">
-        <b>{historicBuilding.name}</b>: {historicBuilding.observations}
+        <b>{historicBuilding.name}</b>
+        <br />
+        <b>Stare: </b>
+        {buildingStateInRomanian(historicBuilding.state)}
+        {historicBuilding.observations && (
+          <>
+            <br />
+            <b>Observații: </b>
+            {historicBuilding.observations}
+          </>
+        )}
       </Tooltip>
     </Polygon>
   );
