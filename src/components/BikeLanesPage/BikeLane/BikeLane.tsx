@@ -1,6 +1,9 @@
 import React from 'react';
 import { Polyline, Tooltip } from 'react-leaflet';
-import { BikeLaneModel, colorFromState } from '../../../typings/BikeLaneModel';
+import {
+  BikeLaneModel,
+  laneColorFromState,
+} from '../../../typings/BikeLaneModel';
 
 type Props = {
   bikeLane: BikeLaneModel;
@@ -8,7 +11,7 @@ type Props = {
 
 const BikeLane = ({ bikeLane }: Props) => {
   const pathOptions = {
-    color: colorFromState(bikeLane.state),
+    color: laneColorFromState(bikeLane.state),
   };
 
   return (

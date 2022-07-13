@@ -15,7 +15,7 @@ export type BikeLaneModel = {
   observations: string;
 };
 
-export const colorFromState = (state: BikeLaneState): string => {
+export const laneColorFromState = (state: BikeLaneState): string => {
   switch (state) {
     case BikeLaneState.GOOD:
       return '#00FF00';
