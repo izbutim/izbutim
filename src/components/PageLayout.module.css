@@ -11,8 +11,19 @@
 }
 
 .footer {
-  padding: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   background-color: var(--clr-tm-blue);
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   color: #ffffff;
+}
+
+.filler {
+  flex-grow: 1;
+}
+
+.githubIcon {
 }

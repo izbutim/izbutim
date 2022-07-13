@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import '../global.css';
 import * as styles from './PageLayout.module.css';
+import { StaticImage } from 'gatsby-plugin-image';
 
 type Props = {
   children: ReactNode;
@@ -14,7 +15,15 @@ const PageLayout = (props: Props) => {
       </header>
       <main>{props.children}</main>
       <footer className={styles.footer}>
-        © {new Date().getFullYear()} Izbutim
+        <div>© {new Date().getFullYear()} Izbutim</div>
+        <div className={styles.filler} />
+        <div>Contribuți pe:&nbsp;</div>
+        <a href="https://github.com/izbutim/izbutim">
+          <StaticImage
+            src="../images/GitHub-Mark-Light-32px.png"
+            alt="GitHub"
+          />
+        </a>
       </footer>
     </>
   );

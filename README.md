@@ -1,6 +1,10 @@
-# Izbutim - Investim în Zile Bune și Ușoare pentru Timișoreni!
+# Izbutim
 
-Codul sursă al site-ului izbutim.ro.
+## Investim în Zile Bune și Ușoare pentru Timișoreni!
+
+<br>
+
+Codul sursă al site-ului https://izbutim.ro.
 Acesta este găzduit pe Netlify.
 
 Este un proiect Gatsby.
