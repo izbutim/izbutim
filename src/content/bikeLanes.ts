@@ -4,12 +4,15 @@ const BIKE_LANES: BikeLaneModel[] = [
   {
     id: 1,
     path: [
-      [45.7565, 21.229],
-      [45.757, 21.229],
+      [45.7493, 21.2358],
+      [45.7501, 21.235],
+      [45.7508, 21.2344],
+      [45.7511, 21.2342],
+      [45.7528, 21.2328],
     ],
-    location: 'Test',
+    location: 'Pasajul Michelangelo - Parcul C.D. Loga',
     state: BikeLaneState.GOOD,
-    observations: 'Test',
+    observations: '',
   },
 ];
 

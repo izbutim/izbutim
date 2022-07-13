@@ -27,3 +27,16 @@ export const laneColorFromState = (state: BikeLaneState): string => {
       return '#FF0000';
   }
 };
+
+export const laneStateInRomanian = (state: BikeLaneState): string => {
+  switch (state) {
+    case BikeLaneState.GOOD:
+      return 'Bună';
+    case BikeLaneState.NEEDS_RENOVATION:
+      return 'Necesită renovări';
+    case BikeLaneState.NEEDS_MARKINGS:
+      return 'Necesită marcaje';
+    default:
+      return 'Necesită proiect';
+  }
+};
