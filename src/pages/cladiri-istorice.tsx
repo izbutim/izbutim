@@ -58,12 +58,12 @@ const HistoricBuildingsPage = () => {
       <h1 style={headingStyles}>Reabilitarea clădirilor istorice</h1>
       <TimisoaraMap>
         {HISTORIC_BUILDINGS.map((b) => (
-          <HistoricBuilding key={b.id} historicBuilding={b} />
+          <HistoricBuilding key={b.id} building={b} />
         ))}
         <div className="leaflet-bottom leaflet-left">
           <div className="leaflet-control leaflet-bar">
             <button onClick={handleLocatorClick}>
-              {usingLocator ? 'Locator On' : 'Locator Off'}
+              {usingLocator ? 'Finalizează' : 'Alege arie'}
             </button>
           </div>
         </div>

@@ -4,7 +4,7 @@ export enum HistoricBuildingState {
   RENOVATED = 'RENOVATED',
   UNDER_RENOVATION = 'UNDER_RENOVATION',
   NEEDS_RENOVATION = 'NEEDS_RENOVATION',
-  NOT_RENOVATED = 'NOT_RENOVATED',
+  NOT_RECENTLY_RENOVATED = 'NOT_RECENTLY_RENOVATED',
   DEGRADATION = 'DEGRADATION',
 }
 
@@ -13,6 +13,7 @@ export type HistoricBuildingModel = {
   perimeter: LatLngExpression[];
   name: string;
   state: HistoricBuildingState;
+  lastRenovationYear: number;
   observations: string;
 };
 
@@ -26,7 +27,7 @@ export const buildingColorFromState = (
       return '#0000FF';
     case HistoricBuildingState.NEEDS_RENOVATION:
       return '#FFFF00';
-    case HistoricBuildingState.NOT_RENOVATED:
+    case HistoricBuildingState.NOT_RECENTLY_RENOVATED:
       return '#FF8000';
     default:
       return '#FF0000';
@@ -43,6 +44,8 @@ export const buildingStateInRomanian = (
       return 'Necesită reabilitare';
     case HistoricBuildingState.UNDER_RENOVATION:
       return 'În curs de reabilitare';
+    case HistoricBuildingState.NOT_RECENTLY_RENOVATED:
+      return 'Nereabilitată recent';
     default:
       return 'Degradare';
   }

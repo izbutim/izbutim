@@ -7,30 +7,33 @@ import {
 } from '../../../typings/HistoricBuildingModel';
 
 type Props = {
-  historicBuilding: HistoricBuildingModel;
+  building: HistoricBuildingModel;
 };
 
-const HistoricBuilding = ({ historicBuilding }: Props) => {
+const HistoricBuilding = ({ building }: Props) => {
   const pathOptions = {
-    color: buildingColorFromState(historicBuilding.state),
+    color: buildingColorFromState(building.state),
   };
 
   return (
     <Polygon
       pathOptions={pathOptions}
-      positions={historicBuilding.perimeter}
-      fillColor={buildingColorFromState(historicBuilding.state)}
+      positions={building.perimeter}
+      fillColor={buildingColorFromState(building.state)}
     >
       <Tooltip direction="bottom">
-        <b>{historicBuilding.name}</b>
+        <b>{building.name}</b>
         <br />
         <b>Stare: </b>
-        {buildingStateInRomanian(historicBuilding.state)}
-        {historicBuilding.observations && (
+        {buildingStateInRomanian(building.state)}
+        <br />
+        <b>Renovată în: </b>
+        {building.lastRenovationYear === -1 ? '?' : building.lastRenovationYear}
+        {building.observations && (
           <>
             <br />
             <b>Observații: </b>
-            {historicBuilding.observations}
+            {building.observations}
           </>
         )}
       </Tooltip>
