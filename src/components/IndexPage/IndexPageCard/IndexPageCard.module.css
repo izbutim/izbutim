@@ -55,7 +55,7 @@
   padding: 1rem;
 
   font-family: 'Inter Bold', sans-serif;
-  color: #ffffff;
+  color: var(--clr-off-white);
 
   background-color: rgba(54, 101, 161, 0.8);
 

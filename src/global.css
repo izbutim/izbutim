@@ -19,9 +19,11 @@
 
 :root {
   --clr-tm-blue: #3665a1; /* (54, 101, 161) */
+  --clr-off-white: #e8e8e8;
 }
 
 body {
   margin: 0;
   font-family: 'Inter Regular', sans-serif;
+  background-color: var(--clr-off-white);
 }
