@@ -60,7 +60,7 @@ const BikeLanesPage = () => {
         <div className="leaflet-bottom leaflet-left">
           <div className="leaflet-control leaflet-bar">
             <button onClick={handleLocatorClick}>
-              {usingLocator ? 'Locator On' : 'Locator Off'}
+              {usingLocator ? 'Finalizează' : 'Alege rută'}
             </button>
           </div>
         </div>
