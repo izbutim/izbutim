@@ -13,9 +13,9 @@ const PageLayout = (props: Props) => {
       <header className={styles.header}>
         <h1 className={styles.title}>Izbutim!</h1>
       </header>
-      <main>{props.children}</main>
+      <main className={styles.main}>{props.children}</main>
       <footer className={styles.footer}>
-        <div>© {new Date().getFullYear()} Izbutim</div>
+        <div>&copy; {new Date().getFullYear()} Izbutim</div>
         <div className={styles.filler} />
         <div>Contribuți pe:&nbsp;</div>
         <a href="https://github.com/izbutim/izbutim">

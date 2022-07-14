@@ -1,6 +1,12 @@
 .header {
+  height: 6vh;
+
   padding: 1rem;
   background-color: var(--clr-tm-blue);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   color: #ffffff;
 }
@@ -11,7 +17,13 @@
   margin: 0;
 }
 
+.main {
+  min-height: 88vh; /* 100vh - 8vh (header) - 6vh (footer) */
+}
+
 .footer {
+  height: 6vh;
+
   padding: 0.5rem 1rem 0.5rem 1rem;
   background-color: var(--clr-tm-blue);
 
