@@ -1,21 +1,18 @@
 import * as styles from './IndexPageCard.module.css';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Link } from 'gatsby';
 
 type Props = {
   title: string;
   to: string;
-  imageUrl: string;
-  imageAlt: string;
+  image: ReactNode;
 };
 
-const IndexPageCard = ({ title, to, imageUrl, imageAlt }: Props) => {
+const IndexPageCard = ({ title, to, image }: Props) => {
   return (
     <div className={styles.card}>
       <Link to={to}>
-        <div className={styles.cardImageContainer}>
-          <img src={imageUrl} alt={imageAlt} className={styles.cardImage} />
-        </div>
+        <div className={styles.cardImageContainer}>{image}</div>
       </Link>
       <div className={styles.titleContainer}>{title}</div>
     </div>

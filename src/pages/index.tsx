@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import IndexPageCard from '../components/IndexPage/IndexPageCard';
 import PageLayout from '../components/layout';
 import * as styles from './IndexPage.module.css';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
   return (
@@ -14,38 +15,54 @@ const IndexPage = () => {
           <IndexPageCard
             title="Starea pistelor de biciclete"
             to="/piste-de-biciclete"
-            imageUrl=""
-            imageAlt="Starea pistelor de biciclete"
+            image={
+              <StaticImage
+                src="../images/piste.webp"
+                alt="Starea pistelor de biciclete"
+              />
+            }
           />
           <IndexPageCard
             title="Reabilitarea clădirilor istorice"
             to="/cladiri-istorice"
-            imageUrl=""
-            imageAlt="Reabilitarea clădirilor istorice"
+            image={
+              <StaticImage
+                src="../images/muhle.webp"
+                alt="Reabilitarea clădirilor istorice"
+              />
+            }
           />
           <IndexPageCard
             title="Transportul în comun"
             to="/transport-in-comun"
-            imageUrl=""
-            imageAlt="Transportul în comun"
+            image={<StaticImage src="./404.webp" alt="Transportul în comun" />}
+          />
+          <IndexPageCard
+            title="Stații de încărcare autovehicule electrice"
+            to="/statii-de-incarcare"
+            image={
+              <StaticImage
+                src="../images/statii.webp"
+                alt="Stații de încărcare autovehicule electrice"
+              />
+            }
           />
           <IndexPageCard
             title="Primăria"
             to="/primaria"
-            imageUrl="https://www.primariatm.ro/wp-content/uploads/2020/08/pmt3-1.jpg"
-            imageAlt="Primăria"
+            image={<StaticImage src="../images/pmt.webp" alt="Primăria" />}
           />
           <IndexPageCard
             title="Consiliul Local"
             to="/consiliul-local"
-            imageUrl="https://www.primariatm.ro/wp-content/uploads/2020/08/pmt3-1.jpg"
-            imageAlt="Consiliul Local"
+            image={
+              <StaticImage src="../images/pmt.webp" alt="Consiliul Local" />
+            }
           />
           <IndexPageCard
             title="Consiliul Județean"
             to="/consiliul-judetean"
-            imageUrl=""
-            imageAlt="Consiliul Județean"
+            image={<StaticImage src="./404.webp" alt="Consiliul Județean" />}
           />
         </section>
       </section>
