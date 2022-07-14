@@ -19,6 +19,7 @@ const IndexPage = () => {
               <StaticImage
                 src="../images/piste.webp"
                 alt="Starea pistelor de biciclete"
+                className={styles.cardImage}
               />
             }
           />
@@ -29,13 +30,20 @@ const IndexPage = () => {
               <StaticImage
                 src="../images/muhle.webp"
                 alt="Reabilitarea clădirilor istorice"
+                className={styles.cardImage}
               />
             }
           />
           <IndexPageCard
             title="Transportul în comun"
             to="/transport-in-comun"
-            image={<StaticImage src="./404.webp" alt="Transportul în comun" />}
+            image={
+              <StaticImage
+                src="./404.webp"
+                alt="Transportul în comun"
+                className={styles.cardImage}
+              />
+            }
           />
           <IndexPageCard
             title="Stații de încărcare autovehicule electrice"
@@ -44,25 +52,42 @@ const IndexPage = () => {
               <StaticImage
                 src="../images/statii.webp"
                 alt="Stații de încărcare autovehicule electrice"
+                className={styles.cardImage}
               />
             }
           />
           <IndexPageCard
             title="Primăria"
             to="/primaria"
-            image={<StaticImage src="../images/pmt.webp" alt="Primăria" />}
+            image={
+              <StaticImage
+                src="../images/pmt.webp"
+                alt="Primăria"
+                className={styles.cardImage}
+              />
+            }
           />
           <IndexPageCard
             title="Consiliul Local"
             to="/consiliul-local"
             image={
-              <StaticImage src="../images/pmt.webp" alt="Consiliul Local" />
+              <StaticImage
+                src="../images/pmt.webp"
+                alt="Consiliul Local"
+                className={styles.cardImage}
+              />
             }
           />
           <IndexPageCard
             title="Consiliul Județean"
             to="/consiliul-judetean"
-            image={<StaticImage src="./404.webp" alt="Consiliul Județean" />}
+            image={
+              <StaticImage
+                src="./404.webp"
+                alt="Consiliul Județean"
+                className={styles.cardImage}
+              />
+            }
           />
         </section>
       </section>
