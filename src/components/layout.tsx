@@ -2,18 +2,27 @@ import React, { ReactNode } from 'react';
 import '../global.css';
 import * as styles from './PageLayout.module.css';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Helmet } from 'react-helmet';
 
 type Props = {
-  children: ReactNode;
+  title: string;
+  children?: ReactNode;
 };
 
-const PageLayout = (props: Props) => {
+const Page = (props: Props) => {
   return (
     <>
+      <Helmet title={`Izbutim | ${props.title}`} defer={false} />
       <header className={styles.header}>
         <h1 className={styles.title}>Izbutim!</h1>
+        <div className={styles.headerFiller} />
+        <h2 className={styles.subtitle}>{props.title}</h2>
       </header>
-      <main className={styles.main}>{props.children}</main>
+      <main className={styles.main}>
+        {props.children ?? (
+          <div className={styles.underConstruction}>Pagină în lucru</div>
+        )}
+      </main>
       <footer className={styles.footer}>
         <div>&copy; {new Date().getFullYear()} Izbutim</div>
         <div className={styles.filler} />
@@ -29,4 +38,4 @@ const PageLayout = (props: Props) => {
   );
 };
 
-export default PageLayout;
+export default Page;

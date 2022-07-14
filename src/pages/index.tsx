@@ -1,13 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import IndexPageCard from '../components/IndexPage/IndexPageCard';
-import PageLayout from '../components/layout';
+import Page from '../components/layout';
 import * as styles from './IndexPage.module.css';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
   return (
-    <PageLayout>
+    <Page title="">
       <section className={styles.container}>
         <h4>Investim în Zile Bune și Ușoare pentru Timișoreni!</h4>
         <Helmet title="Izbutim" defer={false} />
@@ -91,7 +91,7 @@ const IndexPage = () => {
           />
         </section>
       </section>
-    </PageLayout>
+    </Page>
   );
 };
 

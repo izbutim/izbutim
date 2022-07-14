@@ -17,8 +17,22 @@
   margin: 0;
 }
 
+.headerFiller {
+  width: 1rem;
+}
+
+.subtitle {
+  font-family: 'Patua One', sans-serif;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
 .main {
   min-height: 88vh; /* 100vh - 8vh (header) - 6vh (footer) */
+}
+
+.underConstruction {
+  padding: 1rem;
 }
 
 .footer {

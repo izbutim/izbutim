@@ -1,16 +1,10 @@
 import * as React from 'react';
-import PageLayout from '../components/layout';
+import Page from '../components/layout';
 import TimisoaraMap from '../components/common/TimisoaraMap';
 import HISTORIC_BUILDINGS from '../content/historicBuildings';
 import HistoricBuilding from '../components/HistoricBuildingsPage/HistoricBuilding';
-import { Helmet } from 'react-helmet';
 import { LatLng } from 'leaflet';
 import { useMapEvents } from 'react-leaflet';
-
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-};
 
 type LocatorProps = {
   consumer: (latLng: LatLng) => void;
@@ -50,12 +44,7 @@ const HistoricBuildingsPage = () => {
   };
 
   return (
-    <PageLayout>
-      <Helmet
-        title="Izbutim | Reabilitarea clădirilor istorice"
-        defer={false}
-      />
-      <h1 style={headingStyles}>Reabilitarea clădirilor istorice</h1>
+    <Page title="Reabilitarea clădirilor istorice">
       <TimisoaraMap>
         {HISTORIC_BUILDINGS.map((b) => (
           <HistoricBuilding key={b.id} building={b} />
@@ -69,7 +58,7 @@ const HistoricBuildingsPage = () => {
         </div>
         {usingLocator && <Locator consumer={locatorConsumer} />}
       </TimisoaraMap>
-    </PageLayout>
+    </Page>
   );
 };
 

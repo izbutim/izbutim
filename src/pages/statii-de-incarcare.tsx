@@ -1,22 +1,8 @@
 import * as React from 'react';
-import PageLayout from '../components/layout';
-import { Helmet } from 'react-helmet';
-
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-};
+import Page from '../components/layout';
 
 const ChargingStationsPage = () => {
-  return (
-    <PageLayout>
-      <Helmet
-        title="Izbutim | Stații de încărcare autovehicule electrice"
-        defer={false}
-      />
-      <h1 style={headingStyles}>Stații de încărcare autovehicule electrice</h1>
-    </PageLayout>
-  );
+  return <Page title="Stații de încărcare autovehicule electrice" />;
 };
 
 export default ChargingStationsPage;

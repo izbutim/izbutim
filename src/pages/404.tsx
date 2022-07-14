@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import PageLayout from '../components/layout';
-import { Helmet } from 'react-helmet';
+import Page from '../components/layout';
 
 const headingStyles = {
   marginTop: 0,
@@ -14,13 +13,12 @@ const paragraphStyles = {
 
 const NotFoundPage = () => {
   return (
-    <PageLayout>
-      <Helmet title="Izbutim | 404" defer={false} />
+    <Page title="404">
       <h1 style={headingStyles}>Această pagină nu există</h1>
       <p style={paragraphStyles}>
         <Link to="/">Acasă</Link>
       </p>
-    </PageLayout>
+    </Page>
   );
 };
 
