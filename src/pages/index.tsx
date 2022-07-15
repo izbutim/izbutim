@@ -39,7 +39,7 @@ const IndexPage = () => {
             to="/transport-in-comun"
             image={
               <StaticImage
-                src="./404.webp"
+                src="../images/logo.png"
                 alt="Transportul în comun"
                 className={styles.cardImage}
               />
@@ -83,7 +83,7 @@ const IndexPage = () => {
             to="/consiliul-judetean"
             image={
               <StaticImage
-                src="./404.webp"
+                src="../images/logo.png"
                 alt="Consiliul Județean"
                 className={styles.cardImage}
               />
