@@ -7,7 +7,7 @@ type Props = {
 };
 
 const TimisoaraMap = (props: Props) => {
-  return (
+  return typeof window !== 'undefined' ? (
     <MapContainer
       center={[45.7565, 21.229]}
       zoom={15}
@@ -20,7 +20,7 @@ const TimisoaraMap = (props: Props) => {
       />
       {props.children}
     </MapContainer>
-  );
+  ) : null;
 };
 
 export default TimisoaraMap;
