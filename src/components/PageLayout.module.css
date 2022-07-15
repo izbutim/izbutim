@@ -1,7 +1,7 @@
 .header {
   height: 6vh;
 
-  padding: 1rem;
+  padding: 1vh;
   background-color: var(--clr-tm-blue);
 
   display: flex;
@@ -13,18 +13,19 @@
 
 .title {
   font-family: 'Patua One', sans-serif;
-  font-size: 1.5rem;
+  font-size: 3vh;
   margin: 0;
 }
 
 .headerFiller {
-  width: 1rem;
+  width: 1vh;
 }
 
 .subtitle {
   font-family: 'Patua One', sans-serif;
-  font-size: 1.25rem;
+  font-size: 2vh;
   margin: 0;
+  overflow: clip;
 }
 
 .main {
@@ -45,6 +46,7 @@
   flex-direction: row;
   align-items: center;
 
+  font-size: 2vh;
   color: var(--clr-off-white);
 }
 
