@@ -1,0 +1,4 @@
+.map {
+  height: var(--sz-main);
+  min-width: 100vw;
+}

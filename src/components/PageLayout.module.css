@@ -28,7 +28,7 @@
 }
 
 .main {
-  min-height: 88vh; /* 100vh - 8vh (header) - 6vh (footer) */
+  min-height: var(--sz-main);
 }
 
 .underConstruction {

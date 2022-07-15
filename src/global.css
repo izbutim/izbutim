@@ -20,6 +20,7 @@
 :root {
   --clr-tm-blue: #3665a1; /* (54, 101, 161) */
   --clr-off-white: #e8e8e8;
+  --sz-main: 88vh; /* 100vh - 6vh (header) - 6vh (footer) */
 }
 
 body {
