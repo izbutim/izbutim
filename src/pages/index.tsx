@@ -10,7 +10,16 @@ const IndexPage = () => {
     <Page title="">
       <section className={styles.container}>
         <h4>Investim în Zile Bune și Ușoare pentru Timișoreni!</h4>
-        <Helmet title="Izbutim" defer={false} />
+        <Helmet
+          title="Izbutim"
+          defer={false}
+          meta={[
+            {
+              name: 'google-site-verification',
+              content: 'lBlauKSx59Z-pjYh5WnfjcdKKPsAGoC5XQJi9iuQb9E',
+            },
+          ]}
+        />
         <section className={styles.cardContainer}>
           <IndexPageCard
             title="Starea pistelor de biciclete"
