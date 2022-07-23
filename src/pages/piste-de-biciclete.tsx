@@ -2,15 +2,9 @@ import * as React from 'react';
 import TimisoaraMap from '../components/common/TimisoaraMap';
 import BikeLane from '../components/BikeLanesPage/BikeLane';
 import BIKE_LANES from '../content/bikeLanes';
-import { Helmet } from 'react-helmet';
 import Page from '../components/layout';
 import { useMapEvents } from 'react-leaflet';
 import { LatLng } from 'leaflet';
-
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-};
 
 type LocatorProps = {
   consumer: (latLng: LatLng) => void;
