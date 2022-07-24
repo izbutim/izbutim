@@ -22,7 +22,7 @@ const HistoricBuilding = ({ building }: Props) => {
       fillColor={buildingColorFromState(building.state)}
     >
       <Tooltip direction="bottom">
-        <b>{building.name}</b>
+        <b>{building.name || `Nume neactualizat (ID: ${building.id})`}</b>
         <br />
         <b>Stare: </b>
         {buildingStateInRomanian(building.state)}
