@@ -19,7 +19,7 @@ const CHARGING_STATIONS: ChargingStationModel[] = [
     id: 3,
     position: [45.76502, 21.22809],
     location: 'Parcare Iulius Town',
-    capacity: -1,
+    capacity: 2,
     observations: '',
   },
 ];

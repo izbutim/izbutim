@@ -24,7 +24,7 @@ const PublicTransportPage = () => {
   const [usingLocator, setUsingLocator] = React.useState(false);
   const [showHoneycomb, setShowHoneycomb] = React.useState(true);
 
-  const handleHoneycombClick = () => {
+  const toggleHoneycomb = () => {
     setShowHoneycomb((prevState) => !prevState);
   };
 
@@ -46,7 +46,7 @@ const PublicTransportPage = () => {
           )}
         <div className="leaflet-bottom leaflet-left">
           <div className="leaflet-control leaflet-bar">
-            <button onClick={handleHoneycombClick}>
+            <button onClick={toggleHoneycomb}>
               {showHoneycomb ? 'Ascunde' : 'Arată'} celule
             </button>
             <button onClick={handleLocatorClick} disabled={usingLocator}>
