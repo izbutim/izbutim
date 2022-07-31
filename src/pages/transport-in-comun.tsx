@@ -7,6 +7,8 @@ import { generateHoneycombCoordinates } from '../components/PublicTransportPage/
 import Hexagon from '../components/PublicTransportPage/Hexagon';
 import TRANSPORT_ROUTES from '../content/transportRoutes';
 import TransportRoute from '../components/PublicTransportPage/TransportRoute';
+import TRANSPORT_STOPS from '../content/transportStops';
+import TransportStop from '../components/PublicTransportPage/TransportStop';
 
 type LocatorProps = {
   consumer: (latLng: LatLng) => void;
@@ -59,6 +61,9 @@ const PublicTransportPage = () => {
           )}
         {TRANSPORT_ROUTES.map((r) => (
           <TransportRoute key={r.id} route={r} />
+        ))}
+        {TRANSPORT_STOPS.map((s) => (
+          <TransportStop key={s.id} stop={s} />
         ))}
         <div className="leaflet-bottom leaflet-left">
           <div className="leaflet-control leaflet-bar">
