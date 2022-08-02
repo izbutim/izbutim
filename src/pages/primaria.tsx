@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Page from '../components/layout';
 
-const HistoricBuildingsPage = () => {
+const MayorPage = () => {
   return <Page title="Primăria" />;
 };
 
-export default HistoricBuildingsPage;
+export default MayorPage;

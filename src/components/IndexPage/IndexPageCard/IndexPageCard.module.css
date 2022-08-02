@@ -34,7 +34,7 @@
 .cardImageContainer {
   width: 275px;
   height: 275px;
-  background-color: #707070;
+  background-color: var(--clr-tm-blue);
 
   display: flex;
   flex-direction: column;

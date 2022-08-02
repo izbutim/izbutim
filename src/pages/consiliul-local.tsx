@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Page from '../components/layout';
 
-const HistoricBuildingsPage = () => {
+const LocalCouncilPage = () => {
   return <Page title="Consiliul Local" />;
 };
 
-export default HistoricBuildingsPage;
+export default LocalCouncilPage;

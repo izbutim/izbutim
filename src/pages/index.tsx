@@ -48,7 +48,7 @@ const IndexPage = () => {
             to="/transport-in-comun"
             image={
               <StaticImage
-                src="../images/logo.png"
+                src="../images/tram.png"
                 alt="Transportul în comun"
                 className={styles.cardImage}
               />
@@ -88,12 +88,67 @@ const IndexPage = () => {
             }
           />
           <IndexPageCard
+            title="Societăți comerciale subordonate Consiliului Local"
+            to="/societati-subordonate"
+            image={
+              <StaticImage
+                src="../images/pmt.webp"
+                alt="Societăți subordonate"
+                className={styles.cardImage}
+              />
+            }
+          />
+          <IndexPageCard
             title="Consiliul Județean"
             to="/consiliul-judetean"
             image={
               <StaticImage
                 src="../images/logo.png"
                 alt="Consiliul Județean"
+                className={styles.cardImage}
+              />
+            }
+          />
+          <IndexPageCard
+            title="Presa locală"
+            to="/presa-locala"
+            image={
+              <StaticImage
+                src="../images/logo.png"
+                alt="Presa locală"
+                className={styles.cardImage}
+              />
+            }
+          />
+          <IndexPageCard
+            title="Recensământ 2021"
+            to="/recensamant-2021"
+            image={
+              <StaticImage
+                src="../images/recensamant.png"
+                alt="Recensământ 2021"
+                className={styles.cardImage}
+              />
+            }
+          />
+          <IndexPageCard
+            title="Alegeri 2020"
+            to="/alegeri-2020"
+            image={
+              <StaticImage
+                src="../images/alegeri2020.png"
+                alt="Alegeri 2020"
+                className={styles.cardImage}
+              />
+            }
+          />
+          <IndexPageCard
+            title="Alegeri 2024"
+            to="/alegeri-2024"
+            image={
+              <StaticImage
+                src="../images/logo.png"
+                alt="Alegeri 2024"
                 className={styles.cardImage}
               />
             }

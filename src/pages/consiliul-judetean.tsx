@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Page from '../components/layout';
 
-const HistoricBuildingsPage = () => {
+const CountyCouncilPage = () => {
   return <Page title="Consiliul Județean" />;
 };
 
-export default HistoricBuildingsPage;
+export default CountyCouncilPage;
